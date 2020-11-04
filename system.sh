@@ -39,7 +39,7 @@ echo -e "$GREEN Done...$COL_RESET"
 # Add repository
 echo -e " Adding the required repsoitories...$COL_RESET"
 if [ ! -f /usr/bin/add-apt-repository ]; then
-echo "Installing add-apt-repository..."
+echo " Installing add-apt-repository..."
 hide_output sudo apt-get -y update
 apt_install software-properties-common
 fi
