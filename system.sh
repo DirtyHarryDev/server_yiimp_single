@@ -125,7 +125,7 @@ if [ -z "${DISABLE_FIREWALL:-}" ]; then
 	fi
 	fi
 
-sudo ufw --force enable;
+hide_output sudo ufw --force enable;
 fi #NODOC
 set -eu -o pipefail
 echo -e "$GREEN Done...$COL_RESET"
