@@ -10,9 +10,9 @@ cd $HOME/yiimpserver/yiimp_single
 
 echo -e " Installing cron screens to crontab...$COL_RESET"
 
-(crontab -l 2>/dev/null; echo "@reboot sleep 20 && /home/crypto-data/yiimp/starts/screens.start.sh") | crontab -
+(crontab -l 2>/dev/null; echo "@reboot sleep 20 && /home/yiimp-data/yiimp/starts/screens.start.sh") | crontab -
 if [[ ("$CoinPort" == "no") ]]; then
-(crontab -l 2>/dev/null; echo "@reboot sleep 20 && /home/crypto-data/yiimp/starts/stratum.start.sh") | crontab -
+(crontab -l 2>/dev/null; echo "@reboot sleep 20 && /home/yiimp-data/yiimp/starts/stratum.start.sh") | crontab -
 fi
 
 (crontab -l 2>/dev/null; echo "@reboot source /etc/functions.sh") | crontab -
@@ -111,8 +111,9 @@ screen -dmS groestl bash $STRATUM_DIR/run.sh groestl
 screen -dmS skunk bash $STRATUM_DIR/run.sh skunk
 screen -dmS phi1612 bash $STRATUM_DIR/run.sh phi1612
 screen -dmS hsr bash $STRATUM_DIR/run.sh hsr
-screen -dmS yescryptr16 bash $STRATUM_DIR/run.sh yescryptR16
+screen -dmS yescryptr16 bash $STRATUM_DIR/run.sh yescryptr16
 screen -dmS x16r bash $STRATUM_DIR/run.sh x16r
+screen -dmS x16rv2 bash $STRATUM_DIR/run.sh x16rv2
 ' | sudo -E tee $STORAGE_ROOT/yiimp/starts/stratum.start.sh >/dev/null 2>&1
 sudo chmod +x $STORAGE_ROOT/yiimp/starts/stratum.start.sh
 
