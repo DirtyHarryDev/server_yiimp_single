@@ -28,6 +28,7 @@ sudo sed -i 's/AdminRights/'${AdminPanel}'/' $STORAGE_ROOT/yiimp/yiimp_setup/yii
 sudo cp -r $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/web $STORAGE_ROOT/yiimp/site/
 cd $STORAGE_ROOT/yiimp/yiimp_setup/
 sudo cp -r $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/bin/. /bin/
+sudo chmod -R +x /bin/yiimp
 sudo mkdir -p /var/www/${DomainName}/html
 sudo mkdir -p /etc/yiimp
 sudo mkdir -p $STORAGE_ROOT/yiimp/site/backup/
