@@ -25,8 +25,10 @@ sudo cp -r stratum /usr/bin
 sudo chmod +x /usr/bin/stratum
 sudo cp -r addport /usr/bin
 sudo chmod +x /usr/bin/addport
-sudo cp -r addportyescrypt /usr/bin
-sudo chmod +x /usr/bin/addportyescrypt
+sudo cp -r addport-yescrypt /usr/bin
+sudo chmod +x /usr/bin/addport-yescrypt
+sudo cp -r addport-nicehash /usr/bin
+sudo chmod +x /usr/bin/addport-nicehash
 echo '
 clear
 run-parts /etc/update-motd.d/ | sudo tee /etc/motd
