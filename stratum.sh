@@ -26,7 +26,7 @@ cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum-yescrypt/iniparser
 hide_output sudo make
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum-yescrypt
 if [[ ("$AutoExchange" == "yes") ]]; then
-sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum_yescrypt/Makefile
+sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/stratum-yescrypt/Makefile
 fi
 hide_output sudo make
 
