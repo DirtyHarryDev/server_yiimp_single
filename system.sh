@@ -191,6 +191,11 @@ cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 hide_output sudo git clone https://github.com/DirtyHarryDev/stratum-yescrypt.git
 sleep 2s
 
+echo -e " Downloading NEW Stratum...$COL_RESET"
+cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
+hide_output sudo git clone https://github.com/DirtyHarryDev/stratum-full.git
+sleep 2s
+
 echo -e "$GREEN System files installed...$COL_RESET"
 
 set +eu +o pipefail
