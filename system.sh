@@ -186,12 +186,12 @@ if [[ ("$CoinPort" == "yes") ]]; then
 	sudo git checkout multi-port >/dev/null 2>&1
 fi
 
-echo -e " Downloading Yescrypt Stratum...$COL_RESET"
+echo -e " Downloading Low Difficulty Stratum...$COL_RESET"
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
-hide_output sudo git clone https://github.com/DirtyHarryDev/stratum-yescrypt.git
+hide_output sudo git clone https://github.com/DirtyHarryDev/stratum-lowdiff.git
 sleep 2s
 
-echo -e " Downloading NEW Stratum...$COL_RESET"
+echo -e " Downloading Full Stratum...$COL_RESET"
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 hide_output sudo git clone https://github.com/DirtyHarryDev/stratum-full.git
 sleep 2s
