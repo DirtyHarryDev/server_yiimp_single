@@ -118,7 +118,7 @@ STRATUM_DIR=$STORAGE_ROOT/yiimp/site/stratum
 LOG_DIR=$STORAGE_ROOT/yiimp/site/log
 #!/usr/bin/env bash
 
-'""''"${coinsymbollower}"''""'="screen -dmS '""''"${coinsymbollower}"''""' bash $STRATUM_DIR/run_yescrypt.sh '""''"${coinsymbollower}"''""'.'""''"${coinalgo}"''""'"
+'""''"${coinsymbollower}"''""'="screen -dmS '""''"${coinsymbollower}"''""' bash $STRATUM_DIR/run_lowdiff.sh '""''"${coinsymbollower}"''""'.'""''"${coinalgo}"''""'"
 '""''"${coinsymbollower}"''""'stop="'screen -X -S ${coinsymbollower} quit'"
 
 startstop_'""''"${coinsymbollower}"''""'() {
