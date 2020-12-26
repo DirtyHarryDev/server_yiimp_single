@@ -29,6 +29,8 @@ sudo cp -r addport-full /usr/bin
 sudo chmod +x /usr/bin/addport-full
 sudo cp -r addport-lowdiff /usr/bin
 sudo chmod +x /usr/bin/addport-lowdiff
+sudo cp -r addport-zenx /usr/bin
+sudo chmod +x /usr/bin/addport-zenx
 sudo cp -r addport-nicehash /usr/bin
 sudo chmod +x /usr/bin/addport-nicehash
 echo '
