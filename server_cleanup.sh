@@ -114,6 +114,7 @@ screen -dmS hsr bash $STRATUM_DIR/run.sh hsr
 screen -dmS yescryptr16 bash $STRATUM_DIR/run.sh yescryptr16
 screen -dmS x16r bash $STRATUM_DIR/run.sh x16r
 screen -dmS x16rv2 bash $STRATUM_DIR/run.sh x16rv2
+screen -dmS balloon bash $STRATUM_DIR/run_zenx.sh balloon
 ' | sudo -E tee $STORAGE_ROOT/yiimp/starts/stratum.start.sh >/dev/null 2>&1
 sudo chmod +x $STORAGE_ROOT/yiimp/starts/stratum.start.sh
 
